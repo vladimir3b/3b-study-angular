@@ -1,6 +1,6 @@
-<kendo-scheduler *ngIf="refresh; else  loadingKendoScheduler"
+<kendo-scheduler
+    [editService]="editEvents"
     startTime="07:00"
-    [editService]="editService"
     [kendoSchedulerBinding]="events"
     [kendoSchedulerReactiveEditing]="createFormGroup"
     [selectedDate]="selectedDate"
@@ -21,12 +21,3 @@
   <kendo-scheduler-agenda-view>
   </kendo-scheduler-agenda-view>
 </kendo-scheduler>
-
-<ng-template #loadingKendoScheduler>
-  <div
-      fxLayout="row"
-      fxLayoutAlign="center center"
-      style="height: 600px;">
-    <mat-spinner></mat-spinner>
-  </div>
-</ng-template>
