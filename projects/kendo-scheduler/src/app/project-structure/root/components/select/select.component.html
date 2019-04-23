@@ -1,8 +1,18 @@
-<mat-form-field>
-  <input matInput
-      [matDatepicker]="picker"
-      placeholder="Choose a date"
-      (dateChange)="onNewDate($event.value)">
-  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-datepicker #picker></mat-datepicker>
-</mat-form-field>
+<div fxLayout="row"
+  class="mt-4"
+  fxLayoutAlign="start start"
+  fxLayoutGap="1rem">
+  <mat-form-field>
+    <input matInput
+        [matDatepicker]="picker"
+        placeholder="Choose a date"
+        (dateChange)="onNewDate($event.value)">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <button color="warn"
+      (click)="changeEvent()"
+      mat-raised-button>
+    Change random event
+  </button>
+</div>

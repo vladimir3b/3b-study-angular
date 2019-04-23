@@ -6,9 +6,11 @@
   </div>
   <div class="row">
     <div class="col">
-      <fg-scheduler [selectedDate]="selectedDate"
-          (events)="updateEvents($event)">
-      </fg-scheduler>
+      <div class="mat-elevation-z8">
+        <fg-scheduler [selectedDate]="selectedDate"
+            (events)="updateEvents($event)">
+        </fg-scheduler>
+      </div>
     </div>
   </div>
 </div>

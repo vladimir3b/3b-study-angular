@@ -2,7 +2,9 @@ import { LoadExternalDataService } from './../../services/load-external-data.ser
 import { ManageEventsService } from './../../services/manage-events.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
-import { Subscription } from 'rxjs';
+import { Subscription, interval } from 'rxjs';
+import { takeUntil, filter } from 'rxjs/Operators';
+import { random } from 'lodash';
 
 @Component({
   selector: 'fg-root',
@@ -25,7 +27,17 @@ export class RootComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this._manageEvents.initializeEvens();
     this._subscriptions.push(this._loadExternalData.getHobbies().subscribe(
-      events => setTimeout( () => events.forEach(event => this._manageEvents.addEvent(event), 100000))
+      events => {
+        const intervalToShowEvents = 75;
+        const stop = interval(intervalToShowEvents).pipe(filter(value => value >= events.length));
+        interval(intervalToShowEvents)
+        .pipe(takeUntil(stop))
+        .subscribe(value => {
+          if (random(100) % 2 === 1) {
+            this._manageEvents.addEvent(events[value]);
+          }
+        });
+      }
     ));
   }
   ngOnDestroy() {
