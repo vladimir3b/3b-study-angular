@@ -25,7 +25,7 @@ export class SelectComponent {
       ...event,
       title: 'Kiss Amber Rose Revah'
     });
-    console.log(`Changed event with id ${event.id}.`)
+    console.log(`Changed event with id ${event.id}.`);
   }
 
 }
