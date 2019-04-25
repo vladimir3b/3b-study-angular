@@ -1,0 +1,42 @@
+[
+  {
+    "userId": "5cc179bfd8a491ea0b479391",
+    "gender": "male",
+    "username": "reese_pollard2002",
+    "email": "reese_pollard2002@gmail.com",
+    "password": "5cc179bfb647867999d5b6cc",
+    "color": "#8A2BE2"
+  },
+  {
+    "userId": "5cc179bfdd9188f70800a8fe",
+    "gender": "male",
+    "username": "jacobson_atkinson2005",
+    "email": "jacobson_atkinson2005@gmail.com",
+    "password": "5cc179bf87a4076460c04344",
+    "color": "#FF7F50"
+  },
+  {
+    "userId": "5cc179bfef899801d3e7ea64",
+    "gender": "male",
+    "username": "sweeney.oconnor1985",
+    "email": "sweeney.oconnor1985@yahoo.com",
+    "password": "5cc179bfb2d529f63504328b",
+    "color": "#00FFFF"
+  },
+  {
+    "userId": "5cc179bf480c729d239aabc0",
+    "gender": "male",
+    "username": "edwards_joseph2000",
+    "email": "edwards_joseph2000@yahoo.com",
+    "password": "5cc179bf1d968097b82bb6b6",
+    "color": "#00BFFF"
+  },
+  {
+    "userId": "5cc179bfa9a789c9ba1942fe",
+    "gender": "female",
+    "username": "liz_marsh2011",
+    "email": "liz_marsh2011@gmail.com",
+    "password": "5cc179bfa244dc80ad9b1309",
+    "color": "#7FFFD4"
+  }
+]

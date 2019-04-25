@@ -23,9 +23,9 @@ export class SelectComponent {
     const event = this._manageEvents.events[index];
     this._manageEvents.updateEvent(event.id, {
       ...event,
-      title: 'Kiss Amber Rose Revah'
+      title: '<strong>Kiss</strong> Amber Rose Revah'
     });
-    console.log(`Changed event with id ${event.id}.`);
+    console.log(`Changed event with id ${event.userId}.`);
   }
 
 }

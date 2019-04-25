@@ -5,7 +5,16 @@
     [kendoSchedulerReactiveEditing]="createFormGroup"
     [selectedDate]="selectedDate"
     [(selectedViewIndex)]="selectViewIndex"
-    style="height: 600px;">
+    style="min-height: 600px;">
+
+  <ng-template class="alert alert-danger"
+      kendoSchedulerEventTemplate let-event="event">
+    <div>
+      <span style="alert-info">{{ event.title }}</span>
+      <div>{{event.userId}}</div>
+    </div>
+  </ng-template>
+
   <kendo-scheduler-day-view>
   </kendo-scheduler-day-view>
 

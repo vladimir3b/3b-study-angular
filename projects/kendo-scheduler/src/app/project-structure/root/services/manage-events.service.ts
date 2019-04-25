@@ -28,6 +28,7 @@ export class ManageEventsService {
   }
   addEvent(event: SchedulerEvent): void {
     if (!this._idAlreadyExists(event.id)) {
+      console.log(event);
       this._events.push(event);
     }
   }
