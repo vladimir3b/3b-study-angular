@@ -1,10 +1,11 @@
-import { ManageEventsService } from './../../services/manage-events.service';
 import {
   Component,
   EventEmitter,
   Output
 } from '@angular/core';
 import { random } from 'lodash';
+
+import { ManageEventsService } from './../../services/manage-events.service';
 
 @Component({
   selector: 'fg-select',
@@ -25,7 +26,7 @@ export class SelectComponent {
       ...event,
       title: '<strong>Kiss</strong> Amber Rose Revah'
     });
-    console.log(`Changed event with id ${event.userId}.`);
+    console.log(`Changed event with id ${event.id}.`);
   }
 
 }
