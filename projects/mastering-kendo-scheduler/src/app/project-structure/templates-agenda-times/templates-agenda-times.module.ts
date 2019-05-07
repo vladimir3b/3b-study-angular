@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RootTemplatesEventAllDayComponent } from './components/root-templates-event-all-day/root-templates-event-all-day.component';
+import { RootTemplatesAgendaTimesComponent } from './components/root-templates-agenda-times/root-templates-agenda-times.component';
 
 
 @NgModule({
-  declarations: [RootTemplatesEventAllDayComponent],
+  declarations: [RootTemplatesAgendaTimesComponent],
   imports: [
     CommonModule
   ]
 })
-export class TemplatesEventAllDayModule { }
+export class TemplatesAgendaTimesModule { }

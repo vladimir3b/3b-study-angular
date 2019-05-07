@@ -1,15 +1,15 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { RootTemplatesEventAllDayComponent } from './components/root-templates-event-all-day/root-templates-event-all-day.component';
+import { RootTemplatesSlotAllDayComponent } from './components/root-templates-slot-all-day/root-templates-slot-all-day.component';
 
 const ROUTES: Routes = [{
-  path: 'templates-event-all-day',
-  component: RootTemplatesEventAllDayComponent
+  path: 'templates-slot-all-day',
+  component: RootTemplatesSlotAllDayComponent
 }];
 
 @NgModule({
   imports: [ RouterModule.forRoot(ROUTES) ],
   exports: [ RouterModule ]
 })
-export class TemplatesEventAllDayRouter { }
+export class TemplatesSlotAllDayRouter { }

@@ -1,15 +1,16 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { RootTemplatesEventAllDayComponent } from './components/root-templates-event-all-day/root-templates-event-all-day.component';
+// tslint:disable-next-line:max-line-length
+import { RootTemplatesHeaderMajorTimeComponent } from './components/root-templates-header-major-time/root-templates-header-major-time.component';
 
 const ROUTES: Routes = [{
-  path: 'templates-event-all-day',
-  component: RootTemplatesEventAllDayComponent
+  path: 'templates-header-major-time',
+  component: RootTemplatesHeaderMajorTimeComponent
 }];
 
 @NgModule({
   imports: [ RouterModule.forRoot(ROUTES) ],
   exports: [ RouterModule ]
 })
-export class TemplatesEventAllDayRouter { }
+export class TemplatesHeaderMajorTimeRouter { }

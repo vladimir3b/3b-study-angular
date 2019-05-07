@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RootTemplatesEventAllDayComponent } from './components/root-templates-event-all-day/root-templates-event-all-day.component';
+import { RootTemplatesHeaderDateComponent } from './components/root-templates-header-date/root-templates-header-date.component';
 
 
 @NgModule({
-  declarations: [RootTemplatesEventAllDayComponent],
+  declarations: [RootTemplatesHeaderDateComponent],
   imports: [
     CommonModule
   ]
 })
-export class TemplatesEventAllDayModule { }
+export class TemplatesHeaderDateModule { }

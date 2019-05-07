@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'fg-root-templates-event-all-day',
-  templateUrl: './root-templates-event-all-day.component.html',
-  styleUrls: ['./root-templates-event-all-day.component.scss']
+  selector: 'fg-root-templates-slot-month',
+  templateUrl: './root-templates-slot-month.component.html',
+  styleUrls: ['./root-templates-slot-month.component.scss']
 })
-export class RootTemplatesEventAllDayComponent implements OnInit {
+export class RootTemplatesSlotMonthComponent implements OnInit {
 
   constructor() { }
 

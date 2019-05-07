@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RootTemplatesEventAllDayComponent } from './components/root-templates-event-all-day/root-templates-event-all-day.component';
+// tslint:disable-next-line:max-line-length
+import { RootTemplatesHeaderMajorTimeComponent } from './components/root-templates-header-major-time/root-templates-header-major-time.component';
 
 
 @NgModule({
-  declarations: [RootTemplatesEventAllDayComponent],
+  declarations: [RootTemplatesHeaderMajorTimeComponent],
   imports: [
     CommonModule
   ]
 })
-export class TemplatesEventAllDayModule { }
+export class TemplatesHeaderMajorTimeModule { }

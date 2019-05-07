@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { RootTemplatesEventAllDayComponent } from './components/root-templates-event-all-day/root-templates-event-all-day.component';
+import { RootTemplatesSlotMonthComponent } from './components/root-templates-slot-month/root-templates-slot-month.component';
 
 
 @NgModule({
-  declarations: [RootTemplatesEventAllDayComponent],
+  declarations: [RootTemplatesSlotMonthComponent],
   imports: [
     CommonModule
   ]
 })
-export class TemplatesEventAllDayModule { }
+export class TemplatesSlotMonthModule { }

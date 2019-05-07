@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'fg-root-templates-event-all-day',
-  templateUrl: './root-templates-event-all-day.component.html',
-  styleUrls: ['./root-templates-event-all-day.component.scss']
+  selector: 'fg-root-templates-agenda-times',
+  templateUrl: './root-templates-agenda-times.component.html',
+  styleUrls: ['./root-templates-agenda-times.component.scss']
 })
-export class RootTemplatesEventAllDayComponent implements OnInit {
+export class RootTemplatesAgendaTimesComponent implements OnInit {
 
   constructor() { }
 
