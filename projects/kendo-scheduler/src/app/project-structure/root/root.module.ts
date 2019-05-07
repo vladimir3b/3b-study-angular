@@ -9,8 +9,8 @@ import { RootComponent } from './components/root/root.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SchedulerComponent } from './components/scheduler/scheduler.component';
 import { SelectComponent } from './components/select/select.component';
-import { EditEventsService } from './services/edit-events.service';
-import { ManageEventsService } from './services/manage-events.service';
+import { EditEventsService } from '../../../../../.common/services/edit-events.service';
+import { ManageEventsService } from '../../../../../.common/services/manage-events.service';
 import { LoadExternalDataService } from './services/load-external-data.service';
 import { HttpClientModule } from '@angular/common/http';
 

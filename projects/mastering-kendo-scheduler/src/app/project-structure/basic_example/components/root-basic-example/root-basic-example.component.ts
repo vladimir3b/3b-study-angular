@@ -1,34 +1,27 @@
-import { ManageEventsService } from '../../../../../../../.common/services/manage-events.service';
-import { EditEventsService } from '../../../../../../../.common/services/edit-events.service';
-import {
-  Component,
-  Input,
-  OnInit,
-} from '@angular/core';
-import { SchedulerEvent, CreateFormGroupArgs  } from '@progress/kendo-angular-scheduler';
-import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { SchedulerEvent, CreateFormGroupArgs } from '@progress/kendo-angular-scheduler';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+import { EditEventsService } from './../../../../../../../.common/services/edit-events.service';
+import { ManageEventsService } from './../../../../../../../.common/services/manage-events.service';
 
 @Component({
-  selector: 'fg-scheduler',
-  templateUrl: './scheduler.component.html',
-  styles: [`
-    button {
-      margin-left: 1rem;
-    }
-  `]
+  selector: 'fg-root-basic-example',
+  templateUrl: './root-basic-example.component.html',
+  styleUrls: ['./root-basic-example.component.scss']
 })
-export class SchedulerComponent implements OnInit {
-  @Input() selectedDate: Date;
-  selectViewIndex = 0;
+export class RootBasicExampleComponent implements OnInit {
+  selectedDate = new Date();
+  selectViewIndex = 1;
   formGroup: FormGroup;
   get events(): Array<SchedulerEvent> {
     return this._manageEvents.events;
   };
 
   constructor(
-      private _formBuilder: FormBuilder,
-      private _manageEvents: ManageEventsService,
-      public editEvents: EditEventsService
+    private _formBuilder: FormBuilder,
+    private _manageEvents: ManageEventsService,
+    public editEvents: EditEventsService
   ) {
     this.createFormGroup = this.createFormGroup.bind(this);
   }
@@ -55,4 +48,5 @@ export class SchedulerComponent implements OnInit {
     const len = this.events.length;
     return (len === 0) ? 1 : this.events[this.events.length - 1].id + 1;
   }
+
 }

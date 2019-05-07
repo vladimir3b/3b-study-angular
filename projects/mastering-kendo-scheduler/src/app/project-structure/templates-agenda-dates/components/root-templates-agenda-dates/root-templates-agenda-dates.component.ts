@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'fg-root-templates-event-all-day',
-  templateUrl: './root-templates-event-all-day.component.html',
-  styleUrls: ['./root-templates-event-all-day.component.scss']
+  selector: 'fg-root-templates-agenda-dates',
+  templateUrl: './root-templates-agenda-dates.component.html',
+  styleUrls: ['./root-templates-agenda-dates.component.scss']
 })
 export class RootTemplatesAgendaDatesComponent implements OnInit {
 

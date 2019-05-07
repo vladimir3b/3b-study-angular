@@ -18,13 +18,7 @@ export class ManageEventsService {
     return this._eventById(id) >= 0;
   }
   initializeEvens(): void {
-    this._events = [{
-      id: 'firstEvent',
-      title: 'Test Event',
-      start: new Date(),
-      end: new Date(),
-      isAllDay: true
-    }];
+    this._events = [];
   }
   addEvent(event: SchedulerEvent): void {
     if (!this._idAlreadyExists(event.id)) {

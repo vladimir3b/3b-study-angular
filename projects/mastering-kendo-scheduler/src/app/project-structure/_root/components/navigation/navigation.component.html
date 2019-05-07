@@ -1,4 +1,4 @@
-<nav mat-tab-nav-bar>
+<!-- <nav mat-tab-nav-bar>
   <a mat-tab-link
       *ngFor="let link of navigationLink"
       [routerLink]="link.path"
@@ -8,3 +8,14 @@
     {{link.label}}
   </a>
 </nav>
+This shit looks ugly
+-->
+
+<mat-tab-group (selectedTabChange)="tabSelected($event)">
+  <mat-tab
+      *ngFor="let link of navigationLink">
+    <ng-template mat-tab-label>
+      <span routerLink="/{{link.path}}" routerLinkActive="active">{{link.label}}</span>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>

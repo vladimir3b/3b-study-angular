@@ -1,5 +1,5 @@
 import { LoadExternalDataService } from './../../services/load-external-data.service';
-import { ManageEventsService } from './../../services/manage-events.service';
+import { ManageEventsService } from '../../../../../../../.common/services/manage-events.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
 import { Subscription, interval } from 'rxjs';

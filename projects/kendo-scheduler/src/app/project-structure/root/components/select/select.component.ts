@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { random } from 'lodash';
 
-import { ManageEventsService } from './../../services/manage-events.service';
+import { ManageEventsService } from '../../../../../../../.common/services/manage-events.service';
 
 @Component({
   selector: 'fg-select',
