@@ -1,5 +1,4 @@
-import { SchedulerComponent } from './../../../../../.common/components/scheduler/scheduler.component';
-import { CommonModulesModule } from './../../../../../.common/common-modules.module';
+import { CommonModulesModule } from '../../../../../.common/modules/common-modules.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,8 +6,7 @@ import { RootBasicExampleComponent } from './components/root-basic-example/root-
 
 @NgModule({
   declarations: [
-    RootBasicExampleComponent,
-    SchedulerComponent
+    RootBasicExampleComponent
   ],
   imports: [
     CommonModule,

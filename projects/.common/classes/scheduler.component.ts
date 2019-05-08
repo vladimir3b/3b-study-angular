@@ -1,18 +1,17 @@
-import { Component, OnInit, Input } from '@angular/core';
 import { SchedulerEvent, CreateFormGroupArgs } from '@progress/kendo-angular-scheduler';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { EditEventsService } from './../../services/edit-events.service';
-import { ManageEventsService } from '../../services/manage-events.service';
+import { EditEventsService } from '../services/edit-events.service';
+import { ManageEventsService } from '../services/manage-events.service';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'fg-scheduler',
-  templateUrl: 'scheduler.component.html'
+  template: ''
 })
 export class SchedulerComponent {
-  @Input() pageTitle: string;
-  @Input() selectedDate = new Date();
-  @Input() selectViewIndex = 0;
+  pageTitle: string;
+  selectedDate = new Date();
+  selectViewIndex = 0;
   formGroup: FormGroup;
   get events(): Array<SchedulerEvent> {
     return this._manageEvents.events;

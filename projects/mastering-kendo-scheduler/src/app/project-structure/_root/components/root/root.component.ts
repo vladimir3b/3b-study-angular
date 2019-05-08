@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { A_FEW_EVENTS } from './../../../../../../../.common/dumb-data/scheduler/a-few-events.data';
+import { A_FEW_EVENTS } from '../../../../../../../.common/dumb-data/a-few-events.data';
 import { ManageEventsService } from './../../../../../../../.common/services/manage-events.service';
 
 @Component({

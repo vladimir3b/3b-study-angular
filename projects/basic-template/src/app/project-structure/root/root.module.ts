@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MaterialModule } from './../../../../../.common/material.module';
+import { MaterialModule } from '../../../../../.common/modules/material.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { RootRouter } from './root.router';
 import { RootComponent } from './components/root/root.component';

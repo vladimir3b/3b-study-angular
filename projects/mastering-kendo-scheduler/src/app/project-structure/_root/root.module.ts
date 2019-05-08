@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { CommonModulesModule } from './../../../../../.common/common-modules.module';
+import { CommonModulesModule } from '../../../../../.common/modules/common-modules.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { RootRouter } from './root.router';
 import { RootComponent } from './components/root/root.component';
