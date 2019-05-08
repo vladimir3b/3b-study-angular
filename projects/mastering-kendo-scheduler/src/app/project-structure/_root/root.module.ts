@@ -20,12 +20,14 @@ import { TemplatesHeaderMajorTimeModule } from '../templates-header-major-time/t
 import { EditEventsService } from 'projects/.common/services/edit-events.service';
 import { ManageEventsService } from 'projects/.common/services/manage-events.service';
 import { BrowserModule } from '@angular/platform-browser';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     NavigationComponent,
     PageNotFoundComponent,
     RootComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

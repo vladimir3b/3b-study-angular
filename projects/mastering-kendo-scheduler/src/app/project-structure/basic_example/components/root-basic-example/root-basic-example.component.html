@@ -1,24 +1,16 @@
-<kendo-scheduler
-    [editService]="editEvents"
-    startTime="07:00"
-    [kendoSchedulerBinding]="events"
-    [kendoSchedulerReactiveEditing]="createFormGroup"
-    [selectedDate]="selectedDate"
-    [(selectedViewIndex)]="selectViewIndex"
-    style="min-height: 600px;">
+<fg-scheduler [pageTitle]="pageTitle">
+    <kendo-scheduler-day-view>
+    </kendo-scheduler-day-view>
 
-  <kendo-scheduler-day-view>
-  </kendo-scheduler-day-view>
+    <kendo-scheduler-week-view>
+    </kendo-scheduler-week-view>
 
-  <kendo-scheduler-week-view>
-  </kendo-scheduler-week-view>
+    <kendo-scheduler-month-view>
+    </kendo-scheduler-month-view>
 
-  <kendo-scheduler-month-view>
-  </kendo-scheduler-month-view>
+    <kendo-scheduler-timeline-view>
+    </kendo-scheduler-timeline-view>
 
-  <kendo-scheduler-timeline-view>
-  </kendo-scheduler-timeline-view>
-
-  <kendo-scheduler-agenda-view>
-  </kendo-scheduler-agenda-view>
-</kendo-scheduler>
+    <kendo-scheduler-agenda-view>
+    </kendo-scheduler-agenda-view>
+</fg-scheduler>

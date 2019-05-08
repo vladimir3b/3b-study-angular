@@ -18,7 +18,6 @@ export class RootComponent {
       start: new Date(event.startingMoment),
       end: new Date(event.endingMoment)
     }));
-    console.log(this._manageEvents.events);
   }
 }
 
