@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 @Component({
   template: ''
 })
-export class SchedulerComponent {
-  pageTitle: string;
+export class FgSchedulerComponent {
   selectedDate = new Date();
   selectViewIndex = 0;
   formGroup: FormGroup;
@@ -18,9 +17,9 @@ export class SchedulerComponent {
   }
 
   constructor(
-    private _formBuilder: FormBuilder,
-    private _manageEvents: ManageEventsService,
-    public editEvents: EditEventsService
+      private _formBuilder: FormBuilder,
+      private _manageEvents: ManageEventsService,
+      public editEvents: EditEventsService
   ) {
     this.createFormGroup = this.createFormGroup.bind(this);
   }
