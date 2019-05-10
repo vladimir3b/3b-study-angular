@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { A_FEW_EVENTS } from '../../../../../../../.common/dumb-data/a-few-events.data';
+import { A_SINGLE_EVENT } from './../../../../../../../.common/dumb-data/a-single_event.data';
 import { ManageEventsService } from './../../../../../../../.common/services/manage-events.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { ManageEventsService } from './../../../../../../../.common/services/man
 export class RootComponent {
   constructor(private _manageEvents: ManageEventsService) {
     this._manageEvents.initializeEvens();
-    A_FEW_EVENTS.forEach(event => this._manageEvents.addEvent({
+    A_SINGLE_EVENT.forEach(event => this._manageEvents.addEvent({
       id: event.eventId,
       title: event.title,
       description: event.description,
