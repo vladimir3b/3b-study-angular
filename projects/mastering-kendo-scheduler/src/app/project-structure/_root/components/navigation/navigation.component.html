@@ -1,21 +1,18 @@
-<!-- <nav mat-tab-nav-bar>
-  <a mat-tab-link
-      *ngFor="let link of navigationLink"
-      [routerLink]="link.path"
-      routerLinkActive
-      #rla="routerLinkActive"
-      [active]="rla.isActive">
-    {{link.label}}
-  </a>
-</nav>
-This shit looks ugly
--->
+<mat-accordion>
 
-<mat-tab-group (selectedTabChange)="tabSelected($event)">
-  <mat-tab
-      *ngFor="let link of navigationLink">
-    <ng-template mat-tab-label>
-      <span routerLink="/{{link.path}}" routerLinkActive="active">{{link.label}}</span>
-    </ng-template>
-  </mat-tab>
-</mat-tab-group>
+  <mat-expansion-panel *ngFor="let menuElement of navigationLink">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ menuElement.label }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <mat-list-item
+          (click)="navigate(menuElement.path, subMenu.path)"
+          *ngFor="let subMenu of menuElement.navigationLink">
+        <span>{{ subMenu.label }}</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-expansion-panel>
+
+</mat-accordion>
