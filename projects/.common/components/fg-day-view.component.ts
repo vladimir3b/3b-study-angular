@@ -44,6 +44,15 @@ import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
         </div>
 
         <div class="row">
+          <div class="col">
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-left">
+            <ng-content></ng-content>
+          </div>
           <div class="col text-right">
             <button class="btn btn-link"
                 (click)="showMore()">
@@ -60,7 +69,7 @@ import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
   styles: [
     `
       button {
-        color: orange !important;
+        color: black !important;
       }
     `
   ]

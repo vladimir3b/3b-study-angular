@@ -12,6 +12,7 @@ export class RootComponent {
     this._manageEvents.initializeEvens();
     A_SINGLE_EVENT.forEach(event => this._manageEvents.addEvent({
       id: event.eventId,
+      userId: event.userId,
       title: event.title,
       description: event.description,
       isAllDay: event.allDayEvent,
