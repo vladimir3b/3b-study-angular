@@ -21,7 +21,6 @@ export class EditEventsService extends BaseEditService<IMySchedulerEvent> {
       recurrenceId: 'recurrenceID',
       recurrenceExceptions: 'recurrenceException'
     });
-   this.events.subscribe(events=> console.log(events));
    }
 
   save(

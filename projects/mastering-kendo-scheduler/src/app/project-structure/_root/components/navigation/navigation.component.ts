@@ -16,7 +16,7 @@ export class NavigationComponent {
   constructor(private _router: Router) { }
 
   navigate(baseLink: string, subLink: string): void {
-    console.log(`/${baseLink}/${ subLink }`);
+    // console.log(`/${baseLink}/${ subLink }`);
     this._router.navigateByUrl(`/${baseLink}/${subLink}`);
   }
 }

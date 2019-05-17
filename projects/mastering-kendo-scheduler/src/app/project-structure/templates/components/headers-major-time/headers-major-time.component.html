@@ -2,34 +2,26 @@
 <kendo-scheduler
     [editService]="editEvents"
     startTime="07:00"
+    [resources]="resources"
     [kendoSchedulerBinding]="events"
     [kendoSchedulerReactiveEditing]="createFormGroup"
     [selectedDate]="selectedDate"
     [(selectedViewIndex)]="selectViewIndex"
-    style="min-height: 600px;">
+    style="min-height: 600px">
 
   <kendo-scheduler-day-view>
     <ng-template kendoSchedulerAllDaySlotTemplate let-date="date">
-      <strong>{{ date | date}}</strong>
+      <strong>{{ date | date }}</strong> <!-- This will show the correct date -->
     </ng-template>
   </kendo-scheduler-day-view>
 
   <kendo-scheduler-week-view>
-    <ng-template kendoSchedulerAllDaySlotTemplate let-date="date">
-      <strong>{{ date | date}}</strong>
-    </ng-template>
-    <ng-template kendoSchedulerAllDayEventTemplate let-event="event">
-      <fg-week-view [event]="event"></fg-week-view>
+    <ng-template kendoSchedulerMajorTimeHeaderTemplate let-date="date">
+      🤔🤔🤔 {{date | date}} <!--  This will show Feb 1, 1980. I guess this is a bug...-->
     </ng-template>
   </kendo-scheduler-week-view>
 
   <kendo-scheduler-month-view>
-    <ng-template kendoSchedulerAllDaySlotTemplate let-date="date">
-      <strong>{{ date | date}}</strong>
-    </ng-template> <!-- Here All-Day Slot doesn't do anything -->
-    <ng-template kendoSchedulerAllDayEventTemplate let-event="event">
-      <fg-week-view [event]="event"></fg-week-view>
-    </ng-template>
   </kendo-scheduler-month-view>
 
   <kendo-scheduler-timeline-view>
@@ -37,4 +29,5 @@
 
   <kendo-scheduler-agenda-view>
   </kendo-scheduler-agenda-view>
+
 </kendo-scheduler>

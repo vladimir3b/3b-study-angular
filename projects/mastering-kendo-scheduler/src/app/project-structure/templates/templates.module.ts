@@ -8,6 +8,10 @@ import { SlotsTimeComponent } from './components/slots-time/slots-time.component
 import { SlotsMonthComponent } from './components/slots-month/slots-month.component';
 import { EventsRenderingComponent } from './components/events-rendering/events-rendering.component';
 import { EventsAllDayComponent } from './components/events-all-day/events-all-day.component';
+import { HeadersMajorTimeComponent } from './components/headers-major-time/headers-major-time.component';
+import { HeadersMinorTimeComponent } from './components/headers-minor-time/headers-minor-time.component';
+import { HeadersDateComponent } from './components/headers-date/headers-date.component';
+import { HeadersGroupComponent } from './components/headers-group/headers-group.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { EventsAllDayComponent } from './components/events-all-day/events-all-da
     EventsAllDayComponent,
     SlotsAllDayComponent,
     SlotsTimeComponent,
-    SlotsMonthComponent
+    SlotsMonthComponent,
+    HeadersMajorTimeComponent,
+    HeadersMinorTimeComponent,
+    HeadersDateComponent,
+    HeadersGroupComponent
   ],
   imports: [
     CommonModule,

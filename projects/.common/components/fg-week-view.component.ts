@@ -5,7 +5,7 @@ import { SchedulerEvent } from '@progress/kendo-angular-scheduler';
   selector: 'fg-week-view',
   template: `
     <div class="text-center">
-      {{ event.id }}
+      {{ event.title }} good cheese
     </div>
   `
 })

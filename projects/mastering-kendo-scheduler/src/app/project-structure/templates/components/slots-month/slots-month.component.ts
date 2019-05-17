@@ -1,3 +1,4 @@
+import { FgSchedulerComponent } from './../../../../../../../.common/components/fg-scheduler.component';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './slots-month.component.html',
   styles: []
 })
-export class SlotsMonthComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class SlotsMonthComponent extends FgSchedulerComponent {
+  pageTitle = 'Month Slots';
 }

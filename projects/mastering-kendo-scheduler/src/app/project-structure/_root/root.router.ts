@@ -11,7 +11,7 @@ const ROUTER: Routes = [
   },
   {
     path: '',
-    redirectTo: '/templates',
+    redirectTo: 'templates/events-rendering',
     pathMatch: 'full'
   },
   {
