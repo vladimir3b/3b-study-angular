@@ -9,7 +9,7 @@ const ROUTES: Routes = [
   {
     path: 'example01',
     redirectTo: 'example01/01',
-    pathMatch: 'full'
+    pathMatch: 'prefix'
   },
   {
     path: 'example01/01',

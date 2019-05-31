@@ -14,8 +14,8 @@ const ROUTER: Routes = [
   },
   {
     path: '',
-    redirectTo: 'templates/events-rendering',
-    pathMatch: 'full'
+    redirectTo: 'example01',
+    pathMatch: 'prefix'
   },
   {
     path: '**',
